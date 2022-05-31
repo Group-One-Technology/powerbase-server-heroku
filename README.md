@@ -4,7 +4,8 @@
 
 ## Pre-requisites
 
-- [AWS RDS](https://aws.amazon.com/rds/free/) - A PostgreSQL instance is needed so that Powerbase will be able to create databases and roles. Note: Amazon RDS has a free tier
+- [AWS RDS](https://aws.amazon.com/rds/free/) - A PostgreSQL instance is needed so that Powerbase will be able to create databases and roles. Note: Amazon RDS has a free tier.
+- SMTP Service - The SMTP is used for sending emails to users. Note: You may want to try out [Postmark](https://postmarkapp.com/)'s free trial.
 
 Checkout [our documentation](https://jorenrui.notion.site/Deploying-Powerbase-to-Heroku-Vercel-c3f24a07f9c84929a625faa971961984) on details to get you up and running.
 
