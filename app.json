@@ -1,0 +1,80 @@
+{
+  "name": "Powerbase Server",
+  "description": "The Rails API server of Powerbase.",
+  "repository": "https://github.com/group-One-Technology/powerbase-core",
+  "logo": "https://powerbase.vercel.app/public/img/logo.svg",
+  "keywords": [],
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "14"
+      }
+    },
+    "heroku-redis",
+    "pusher:sandbox",
+    "bonsai:sandbox-6"
+  ],
+  "env": {
+    "RAILS_ENV": {
+      "value": "production"
+    },
+    "CLIENT": {
+      "value": "https://trypowerbase.com"
+    },
+    "AUTH_TOKEN_ENCRYPTION_KEY": {
+      "description": "A secret key for verifying the integrity of tokens used for confirming emails and resetting passwords.",
+      "generator": "secret"
+    },
+    "JWT_ENCRYPTION_KEY": {
+      "description": "A secret key for verifying the integrity of signed cookies used for user sessions.",
+      "generator": "secret"
+    },
+    "API_ENCRYPTION_KEY": {
+      "description": "A secret key for encrypting/decrypting values from the Rails API server (e.g. encrypted database credentials).",
+      "generator": "secret"
+    },
+    "ENCRYPTION_KEY": {
+      "description": "A secret key for encrypting/decrypting values stored in the database.",
+      "generator": "secret"
+    },
+    "HUBSPOT_API_KEY": {
+      "description": "A secret key for verifying the integrity of tokens for hubspot purposes.",
+      "generator": "secret"
+    },
+    "ENABLE_LISTENER": {
+      "description": "Boolean whether to listen for changes in the remote database.",
+      "value": "true"
+    },
+    "SENTRY_DSN": {
+      "description": "To monitor errors, provide the Sentry DSN (optional).",
+      "value": "",
+      "required": false
+    },
+    "ENABLE_SENTRY": {
+      "description": "Boolean whether to enable error monitoring or not.",
+      "value": "false"
+    },
+    "POWERBASE_CLOUD_HOST": {
+      "description": "The host where powerbase will create new databases and roles.",
+      "value": ""
+    },
+    "POWERBASE_CLOUD_DB_CONNECTION": {
+      "description": "The connection string to connect to the database instance where powerbase can create databases and roles.",
+      "value": ""
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 0,
+      "size": "free",
+      "command": "bundle exec rails s"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free",
+      "command": "bundle exec sidekiq -c 2"
+    }
+  },
+  "stack": "container"
+}

@@ -1,0 +1,13 @@
+build:
+  docker:
+    web: Dockerfile
+release:
+  image: web
+  command:
+    - bundle exec rails db:migrate
+run:
+  web: bash -c "rm -f tmp/pids/server.pid" && bundle exec rails s
+  worker:
+    image: web
+    command:
+      - bundle exec sidekiq
