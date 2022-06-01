@@ -3,7 +3,7 @@
   "description": "The Rails API server of Powerbase.",
   "repository": "https://github.com/group-One-Technology/powerbase-core",
   "logo": "https://powerbase.vercel.app/public/img/logo.svg",
-  "keywords": [],
+  "keywords": ["powerbase", "no-code database"],
   "addons": [
     {
       "plan": "heroku-postgresql",
@@ -15,6 +15,7 @@
     "pusher:sandbox",
     "bonsai:sandbox-6"
   ],
+  "website": "https://trypowerbase.com/",
   "env": {
     "RAILS_ENV": {
       "value": "production"
