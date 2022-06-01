@@ -20,6 +20,7 @@
       "value": "production"
     },
     "CLIENT": {
+      "description": "The domain of the powerbase client.",
       "value": "https://trypowerbase.com"
     },
     "AUTH_TOKEN_ENCRYPTION_KEY": {
@@ -56,7 +57,7 @@
       "value": "false"
     },
     "POWERBASE_CLOUD_HOST": {
-      "description": "The host where powerbase will create new databases and roles.",
+      "description": "The host where powerbase will create new databases and roles (e.g. powerbase-test.random-string.us-east-2.rds.amazonaws.com).",
       "value": ""
     },
     "POWERBASE_CLOUD_DB_CONNECTION": {
