@@ -7,7 +7,7 @@
 - [AWS RDS](https://aws.amazon.com/rds/free/) - A PostgreSQL instance is needed so that Powerbase will be able to create databases and roles. Note: Amazon RDS has a free tier.
 - SMTP Service - The SMTP is used for sending emails to users. Note: You may want to try out [Postmark](https://postmarkapp.com/)'s free trial.
 
-Checkout [our documentation](https://jorenrui.notion.site/Deploying-Powerbase-to-Heroku-Vercel-c3f24a07f9c84929a625faa971961984) on details to get you up and running.
+Checkout [our documentation](https://powerbase.notaku.site/Deploying-Powerbase-to-Heroku-Vercel-c3f24a07f9c84929a625faa971961984) on details to get you up and running.
 
 ## Deploying Powerbase Server on Heroku
 
@@ -19,5 +19,5 @@ You can checkout Powerbase by deploying it on [Heroku](https://heroku.com). This
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-For production or long-term use of Powerbase, we recommend some upgrades to avoid the limitation of Heroku's free tier. You can read more at [our documentation](https://jorenrui.notion.site/Deploying-Powerbase-to-Heroku-Vercel-c3f24a07f9c84929a625faa971961984)
+For production or long-term use of Powerbase, we recommend some upgrades to avoid the limitation of Heroku's free tier. You can read more at [our documentation](https://powerbase.notaku.site/Deploying-Powerbase-to-Heroku-Vercel-c3f24a07f9c84929a625faa971961984)
 
