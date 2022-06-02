@@ -32,8 +32,8 @@
       "description": "A secret key for verifying the integrity of signed cookies used for user sessions.",
       "generator": "secret"
     },
-    "API_ENCRYPTION_KEY": {
-      "description": "A secret key for encrypting/decrypting values from the Rails API server (e.g. encrypted database credentials).",
+    "SECRET_KEY_BASE": {
+      "description": "A secret key for Rails (Optional: you can run rails secret later and update this value).",
       "generator": "secret"
     },
     "ENCRYPTION_KEY": {
