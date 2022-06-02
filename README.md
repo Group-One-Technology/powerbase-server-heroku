@@ -1,6 +1,6 @@
 # Powerbase
 
-[Powerbase](https://trypowerbase.com) is the missing bridge to the worlds most trusted relational database.
+[Powerbase](https://trypowerbase.com) provides a unified way to browse, manage, and interact with data stored across multiple systems - systems like your core user database, your customer CRM, and your no-code tools.
 
 ## Pre-requisites
 
