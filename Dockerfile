@@ -1,4 +1,4 @@
-FROM powerbase/powerbase-server:0.1.0
+FROM powerbase/powerbase-server:latest
 
 # Overriding CMD command
 CMD ["echo", "'Build finished.'"]
